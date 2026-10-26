@@ -12,7 +12,7 @@ Papelero pequeño para **papel seco en oficinas**. La etapa actual es un prototi
 | Medición | Sensor HC-SR04 produjo lecturas válidas y también lecturas inválidas/intermitentes. | Validación parcial; falta repetir ensayos y calibrar altura real. |
 | Señalización | Se implementaron indicadores verde, azul y rojo en firmware. | LED azul no validado; no presentarlo como funcional. |
 | Conectividad | Monitoreo local con ESP8266. | Se probó acceso por punto de acceso Wi-Fi y página web local. |
-| Compactación | El SG90 prestado es pequeño para el esfuerzo previsto. | Mecanismo físico no integrado ni validado; se necesita medir fuerza y rediseñar. |
+| Compactación | El SG90 prestado por el DEC se conectó al protoboard durante el montaje. | **No se alimentó ni accionó**: faltaba una fuente externa adecuada y el equipo evitó arriesgar el ESP8266. No se realizaron pruebas de compactación; queda pendiente definir un mecanismo apropiado. |
 
 ## Evidencias y pruebas
 - El equipo presentó y explicó el prototipo ante profesores: **demostración académica**, no estudio formal de usabilidad ni prueba cuantitativa con usuarios.
