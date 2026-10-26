@@ -48,6 +48,12 @@ Los papeleros de oficina se llenan con papel de gran volumen y baja densidad. El
 
 **Código:** se conserva el archivo `.ino` aportado por el equipo. Su presencia en el repositorio no equivale a una verificación de compilación o funcionamiento integral; comprobar conexiones y lecturas en el montaje final.
 
+## Evidencias y trazabilidad
+- [Registro de la demostración y evidencias confirmadas](documentacion/EVIDENCIAS_DEMOSTRACION.md): video mostrado al profesor y fotografía del montaje, **pendientes de publicar como archivos originales**.
+- [Iteraciones y validación](documentacion/ITERACIONES_Y_VALIDACION.md): problemas reales y pruebas pendientes.
+- [Costos reales](documentacion/COSTOS_REALES_ALPHA.md): **$40.000 CLP** gastados; HC-SR04 y SG90 prestados por el DEC.
+- [Plan de compactación](documentacion/PLAN_COMPACTACION_Y_PRESUPUESTO.md): propuesta futura, **no implementada**.
+
 ## Diseño Fusion 360
 El archivo original editable `diseno_3d/Basurero Compactador.f3d` está incluido en este repositorio. La presentación del Avance #2 también documenta dimensiones propuestas de 21 × 17 × 31 cm; confirmar medidas del modelo antes de fabricar.
 
