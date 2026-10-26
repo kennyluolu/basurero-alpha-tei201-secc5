@@ -7,7 +7,7 @@
 | Material | Procedencia | Observación |
 |---|---|---|
 | Sensor ultrasónico HC-SR04 | Préstamo del DEC | No contabilizado como compra |
-| Servomotor SG90 | Préstamo del DEC | No se ha validado para compactar papel; probablemente insuficiente para la fuerza requerida |
+| Servomotor SG90 | Préstamo del DEC | Prestado y conectado al protoboard, pero no accionado por falta de fuente externa adecuada; compactación no probada |
 | ESP8266 | Comprado por el equipo | Sustituyó al ESP32 en la versión funcional |
 | Cables Dupont macho-macho | Comprados por el equipo | Conexiones en protoboard |
 | Cables Dupont macho-hembra | Comprados por el equipo | Conexiones entre módulos |
