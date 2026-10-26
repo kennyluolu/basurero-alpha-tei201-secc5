@@ -17,7 +17,7 @@ Los papeleros de oficina se llenan con papel de gran volumen y baja densidad. El
 - **Visualización:** página local en `http://192.168.4.1` al conectarse al punto de acceso `Basurero-Alpha`.
 - **LED verde:** nivel inferior al umbral; **LED rojo:** alerta a partir del 80 %.
 - **LED azul:** considerado en el prototipo, pero su funcionamiento no quedó validado.
-- **Compactación:** SG90 mencionado como concepto/maqueta; **no integrado**. No se afirma que pueda compactar papel real.
+- **Servomotor SG90:** prestado por el DEC y conectado al protoboard durante el armado, pero **no se puso en funcionamiento** porque no se contaba con una fuente externa adecuada para alimentarlo sin arriesgar la placa ESP8266. Se había previsto para accionar la compactación, que **no se realizó ni validó**.
 - **Profundidad de referencia en firmware:** 30 cm, **ajustable** tras medir el contenedor físico.
 
 ## Estado de validación
