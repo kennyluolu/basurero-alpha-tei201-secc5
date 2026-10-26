@@ -15,3 +15,6 @@ Documentan el montaje y la demostración académica. No acreditan por sí solas 
 
 ## Criterios de publicación
 Conservar originales sin alteraciones como evidencia. Si se prepara una versión visualmente editada (por ejemplo, agregando iluminación LED o un cable que no aparece en la toma original), identificarla explícitamente como **simulación ilustrativa, no prueba de funcionamiento**, y publicarla solo tras aprobación del equipo.
+
+## Nota sobre imágenes recibidas
+Las imágenes `image(20261026-005034).png` y `image(20261026-005905).png` son **capturas de la interfaz de carga de archivos de GitHub**, no fotografías del prototipo. No deben publicarse como evidencias del montaje. Se extrajeron cuatro fotogramas sin alterar del video original, pendientes de subir junto con el archivo MP4.
