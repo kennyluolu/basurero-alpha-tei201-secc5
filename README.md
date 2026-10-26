@@ -69,5 +69,8 @@ El equipo presentó **EcoCompacta — Avance #2** como propuesta de compactador 
 
 Los docentes vieron una demostración y recibieron la explicación del proyecto; **no se registraron aquí resultados formales de pruebas con usuarios**. El plan de compactación y presupuesto se detalla en `documentacion/PLAN_COMPACTACION_Y_PRESUPUESTO.md`.
 
-## Referencia de organización
-Estructura inspirada en el repositorio académico `jgarcia-dec/sensor-calidad-suelo-TEI201`, sin copiar su implementación.
+## Contexto académico
+
+Este proyecto es desarrollado como parte del curso **TEI201 — Taller de Diseño en Ingeniería**, de la **Facultad de Ingeniería y Ciencias de la Universidad Adolfo Ibáñez**.
+
+Esta declaración identifica el contexto académico y no constituye una licencia de reutilización de software.
