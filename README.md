@@ -1,5 +1,5 @@
 # Basurero Alpha | Papelero inteligente para oficinas
-**TEI201 — Universidad Adolfo Ibáñez | Prototipo Alpha IoT**
+**TEI201 — Universidad Adolfo Ibáñez | Sección 8 | Prototipo Alpha IoT**
 
 > **Estado:** prototipo electrónico parcialmente funcional; compactación mecánica pendiente de integración y validación.
 
@@ -46,13 +46,18 @@ Los papeleros de oficina se llenan con papel de gran volumen y baja densidad. El
 5. Conectarse al Wi-Fi `Basurero-Alpha` (clave de demostración: `basurero123`).
 6. Abrir `http://192.168.4.1`.
 
-**Aviso:** este firmware es una reconstrucción documentada de la última configuración conocida, **no una copia byte a byte verificada del último sketch original**. Verificar pines, lecturas y funcionamiento en hardware antes de presentar como resultado definitivo.
+**Código:** se conserva el archivo `.ino` aportado por el equipo. Su presencia en el repositorio no equivale a una verificación de compilación o funcionamiento integral; comprobar conexiones y lecturas en el montaje final.
 
 ## Diseño Fusion 360
-Ver `diseno_3d/README.md`. Se identificó el archivo de referencia `Basurero_FINAL_Interior_Detallado_Componentes_Separados.step`, pero **no se dispone aquí del enlace compartido ni del archivo STEP**. Deben añadirse sin inventarlos.
+El archivo original editable `diseno_3d/Basurero Compactador.f3d` está incluido en este repositorio. La presentación del Avance #2 también documenta dimensiones propuestas de 21 × 17 × 31 cm; confirmar medidas del modelo antes de fabricar.
 
 ## Equipo
-Completar integrantes y roles reales antes de entrega. Repositorio preparado para colaboración.
+Vicente Lechuga · Lucas Soto · Kenny Luo · Agustín Ly · Benjamín Brito. **Roles individuales:** pendientes de confirmar por el equipo.
+
+## Contexto del avance y ODS
+El equipo presentó **EcoCompacta — Avance #2** como propuesta de compactador doméstico. La documentación de esa etapa describe ESP32 y servo SG90, mientras que el prototipo electrónico posterior usa **ESP8266** y no ha demostrado compactación. Son etapas distintas, no resultados intercambiables. Se vincula conceptualmente con **ODS 11** (Ciudades y comunidades sostenibles) y **ODS 12** (Producción y consumo responsables), sin afirmar reducciones cuantificadas de residuos o transporte.
+
+Los docentes vieron una demostración y recibieron la explicación del proyecto; **no se registraron aquí resultados formales de pruebas con usuarios**. El plan de compactación y presupuesto se detalla en `documentacion/PLAN_COMPACTACION_Y_PRESUPUESTO.md`.
 
 ## Referencia de organización
 Estructura inspirada en el repositorio académico `jgarcia-dec/sensor-calidad-suelo-TEI201`, sin copiar su implementación.
