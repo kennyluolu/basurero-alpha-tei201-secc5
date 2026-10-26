@@ -51,8 +51,18 @@ Los papeleros de oficina se llenan con papel de gran volumen y baja densidad. El
 ## Diseño Fusion 360
 El archivo original editable `diseno_3d/Basurero Compactador.f3d` está incluido en este repositorio. La presentación del Avance #2 también documenta dimensiones propuestas de 21 × 17 × 31 cm; confirmar medidas del modelo antes de fabricar.
 
-## Equipo
-Vicente Lechuga · Lucas Soto · Kenny Luo · Agustín Ly · Benjamín Brito. **Roles individuales:** pendientes de confirmar por el equipo.
+## Equipo y contribuciones
+
+**Contribuciones al prototipo documentadas por el equipo:**
+
+| Integrante | Contribución realizada |
+|---|---|
+| **Kenny Luo** | Desarrollo e integración del código con asistencia de IA; configuración de NodeMCU ESP8266; armado y pruebas del prototipo electrónico y protoboard; diseño del modelo en Fusion 360; organización y documentación del repositorio GitHub con asistencia de IA. |
+| **Lucas Soto** | Apoyo en la preparación del PowerPoint y colaboración en el armado del protoboard. |
+
+**Otros integrantes:** Vicente Lechuga, Agustín Ly y Benjamín Brito. No se han definido ni verificado contribuciones individuales para este registro. Como **propuesta de responsabilidades para la siguiente etapa**, pueden distribuirse así, sujeto a aceptación y ejecución: Vicente — materiales y presupuesto; Agustín — pruebas y registro de resultados; Benjamín — documentación y revisión de seguridad. Estas tareas **no se presentan como trabajo ya realizado**.
+
+No existieron roles formales asignados durante el avance documentado.
 
 ## Contexto del avance y ODS
 El equipo presentó **EcoCompacta — Avance #2** como propuesta de compactador doméstico. La documentación de esa etapa describe ESP32 y servo SG90, mientras que el prototipo electrónico posterior usa **ESP8266** y no ha demostrado compactación. Son etapas distintas, no resultados intercambiables. Se vincula conceptualmente con **ODS 11** (Ciudades y comunidades sostenibles) y **ODS 12** (Producción y consumo responsables), sin afirmar reducciones cuantificadas de residuos o transporte.
