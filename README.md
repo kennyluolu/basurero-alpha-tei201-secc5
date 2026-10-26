@@ -1,5 +1,5 @@
 # Basurero Alpha | Papelero inteligente para oficinas
-**TEI201 — Universidad Adolfo Ibáñez | Sección 8 | Prototipo Alpha IoT**
+**TEI201 — Taller de Diseño en Ingeniería | Universidad Adolfo Ibáñez | Sección 5 | Prototipo Basurero Alpha**
 
 > **Estado:** prototipo electrónico parcialmente funcional; compactación mecánica pendiente de integración y validación.
 
@@ -51,23 +51,26 @@ Los papeleros de oficina se llenan con papel de gran volumen y baja densidad. El
 ## Diseño Fusion 360
 El archivo original editable `diseno_3d/Basurero Compactador.f3d` está incluido en este repositorio. La presentación del Avance #2 también documenta dimensiones propuestas de 21 × 17 × 31 cm; confirmar medidas del modelo antes de fabricar.
 
-## Equipo y contribuciones
+## Equipo y roles
 
-**Contribuciones al prototipo documentadas por el equipo:**
-
-| Integrante | Contribución realizada |
+| Integrante | Rol en el proyecto |
 |---|---|
-| **Kenny Luo** | Desarrollo e integración del código con asistencia de IA; configuración de NodeMCU ESP8266; armado y pruebas del prototipo electrónico y protoboard; diseño del modelo en Fusion 360; organización y documentación del repositorio GitHub con asistencia de IA. |
-| **Lucas Soto** | Apoyo en la preparación del PowerPoint y colaboración en el armado del protoboard. |
+| **Kenny Luo** | Desarrollo de software con asistencia de IA, configuración del ESP8266, integración y armado electrónico, diseño 3D en Fusion 360 y gestión del repositorio GitHub. |
+| **Lucas Soto** | Presentación del proyecto y apoyo en el montaje del protoboard. |
+| **Vicente Lechuga** | Coordinación de materiales y presupuesto. |
+| **Agustín Ly** | Evaluación del prototipo y planificación de pruebas. |
+| **Benjamín Brito** | Documentación técnica y revisión del diseño. |
 
-**Otros integrantes:** Vicente Lechuga, Agustín Ly y Benjamín Brito. No se han definido ni verificado contribuciones individuales para este registro. Como **propuesta de responsabilidades para la siguiente etapa**, pueden distribuirse así, sujeto a aceptación y ejecución: Vicente — materiales y presupuesto; Agustín — pruebas y registro de resultados; Benjamín — documentación y revisión de seguridad. Estas tareas **no se presentan como trabajo ya realizado**.
-
-No existieron roles formales asignados durante el avance documentado.
+Los roles describen la distribución de responsabilidades del equipo, no certifican la ejecución individual de cada tarea.
 
 ## Contexto del avance y ODS
 El equipo presentó **EcoCompacta — Avance #2** como propuesta de compactador doméstico. La documentación de esa etapa describe ESP32 y servo SG90, mientras que el prototipo electrónico posterior usa **ESP8266** y no ha demostrado compactación. Son etapas distintas, no resultados intercambiables. Se vincula conceptualmente con **ODS 11** (Ciudades y comunidades sostenibles) y **ODS 12** (Producción y consumo responsables), sin afirmar reducciones cuantificadas de residuos o transporte.
 
 Los docentes vieron una demostración y recibieron la explicación del proyecto; **no se registraron aquí resultados formales de pruebas con usuarios**. El plan de compactación y presupuesto se detalla en `documentacion/PLAN_COMPACTACION_Y_PRESUPUESTO.md`.
+
+## Licencia
+
+El repositorio se distribuye bajo la [licencia MIT](LICENSE). Permite usar, modificar y redistribuir el contenido cubierto por esta licencia, conservando el aviso de derechos de autor y el texto de la licencia. Los componentes de terceros mantienen sus propias licencias.
 
 ## Contexto académico
 
