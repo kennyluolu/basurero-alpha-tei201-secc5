@@ -1,0 +1,1 @@
+Video original y fotogramas extraídos. Las imágenes *_mejorada.jpg solo tienen ajustes globales de iluminación, contraste y nitidez; no se agregaron ni simularon luces encendidas. El LED azul no funcionó según el equipo.
