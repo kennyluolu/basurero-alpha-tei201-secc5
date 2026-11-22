@@ -5,13 +5,15 @@
 ## Inventario conocido
 | Material | Estado actual | Uso |
 |---|---|---|
-| Madera en piezas | Disponible, dimensiones por recibir | Cuerpo, refuerzos y posible placa |
+| Cinco piezas de madera antes de cortar | Medidas originales registradas; espesor, cortes y función por confirmar | Cuerpo, refuerzos y posible placa |
 | NodeMCU ESP8266 | Usado en Alpha | Sensado e interfaz |
 | HC-SR04 | Usado en Alpha | Nivel de llenado |
 | LEDs + resistencias | Usados parcialmente en Alpha | Estado del llenado |
 | Cables/protoboard/USB | Usados en Alpha | Prototipado y carga de firmware |
 | Servo SG90 | Prestado en Alpha, sin ensayo de compactación | **No asumir** que sirve para comprimir |
 | Modelo de Fusion 360 | Existe, validar dimensiones | Plano de referencia |
+
+Las cinco piezas originales y sus dimensiones informadas están en [MEDIDAS_MADERA_ANTES_DE_CORTE.md](../hardware/MEDIDAS_MADERA_ANTES_DE_CORTE.md). **No equivalen a medidas del papelero ya construido.**
 
 ## Materiales mecánicos sugeridos
 - Tornillos, tuercas, escuadras y adhesivo apto para madera.
