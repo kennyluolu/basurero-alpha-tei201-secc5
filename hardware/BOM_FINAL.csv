@@ -8,7 +8,11 @@ Electronica,Resistencias,5,Valores reales por verificar,Usado/por verificar,,,,I
 Electronica,Protoboard,1,Numero de puntos por verificar,Usado,,,,Asegurar montaje
 Electronica,Cables Dupont,1,Conjunto cantidad por contar,Usado,,,,Verificar fijacion y longitud
 Electronica,Cable USB,1,Compatible con NodeMCU,Usado,,,,Costo anterior no individualizado
-Mecanica,Madera estructural,1,Conjunto de piezas dimensiones por medir,Disponible,,,,Reutilizacion
+Mecanica,Madera 1,1,Dimensiones originales ancho x largo 46.5 x 51.2 (unidad pendiente),Reutilizada antes del corte,,,,Espesor y dimensiones despues del corte pendientes; no asignada a cara
+Mecanica,Madera 2,1,Dimensiones originales ancho x largo 46.3 x 51.3 (unidad pendiente),Reutilizada antes del corte,,,,Espesor y dimensiones despues del corte pendientes; no asignada a cara
+Mecanica,Madera 3,1,Dimensiones originales ancho x largo 28.9 x 39.9 (unidad pendiente),Reutilizada antes del corte,,,,Espesor y dimensiones despues del corte pendientes; no asignada a cara
+Mecanica,Madera 4,1,Dimensiones originales ancho x largo 34.4 x 54.3 (unidad pendiente),Reutilizada antes del corte,,,,Espesor y dimensiones despues del corte pendientes; no asignada a cara
+Mecanica,Madera 5,1,Dimensiones originales ancho x largo 34.3 x 56.0 (unidad pendiente),Reutilizada antes del corte,,,,Espesor y dimensiones despues del corte pendientes; no asignada a cara
 Mecanica,Placa compactadora,1,Madera reforzada o metal por definir,Por definir,,,,Dimensionar fuerza y tolerancias
 Mecanica,Guías de placa,2,Material/dimension por definir,Por definir,,,,Evitar giro y atascos
 Mecanica,Tornillos y escuadras,1,Conjunto cantidades por medir,Por confirmar,,,,Fijacion desmontable
