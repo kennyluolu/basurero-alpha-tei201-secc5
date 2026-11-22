@@ -1,7 +1,7 @@
 # Diseño mecánico propuesto: doble piñón y cremallera
 
 **Proyecto:** EcoCompacta · Avance #3 TEI201.  
-**Estado:** concepto definido por el equipo el 22-11-2026; **construcción, dimensiones finales, torque y funcionamiento pendientes de verificación**. No se presenta como mecanismo ya instalado.
+**Estado:** concepto definido por el equipo el 22-11-2026; **motores, drivers, piñones y cremalleras NO adquiridos; construcción, dimensiones finales, torque y funcionamiento pendientes de verificación**. No se presenta como mecanismo ya instalado.
 
 ## 1. Geometría de referencia proporcionada por el equipo
 
@@ -43,7 +43,7 @@ Al girar ambos motores de forma coordinada, los dos puntos de tracción debería
 ## 3. Subsistemas previstos
 
 - **Estructura:** cinco piezas originales de madera, cortadas para conformar el cuerpo; definir base, paredes, tapa y refuerzos sin asumir asignaciones no demostradas.
-- **Actuación:** **2 × 28BYJ-48** y **2 × ULN2003**, por confirmar disponibilidad y compatibilidad exacta; **2 piñones** y **2 cremalleras** compatibles entre sí.
+- **Actuación:** **2 × 28BYJ-48** y **2 × ULN2003**, **NO disponibles según el equipo el 22/11**; por adquirir solo si se valida fuerza y compatibilidad; **2 piñones** y **2 cremalleras** compatibles entre sí.
 - **Placa:** MDF móvil; adicionar al menos dos guías independientes para resistir torsión y evitar que el motor soporte las cargas laterales.
 - **Control:** **NodeMCU ESP8266**, **no ESP32**. HC-SR04 para medir nivel; indicador LED/web y persistencia LittleFS según el firmware de monitoreo.
 - **Protección:** cubierta de transmisión, acceso de mantenimiento desmontable, control de tapa cerrada, limitación superior e inferior y parada/desconexión accesible.
@@ -64,6 +64,9 @@ Al girar ambos motores de forma coordinada, los dos puntos de tracción debería
 El archivo [firmware/EcoCompacta/EcoCompacta.ino](../firmware/EcoCompacta/EcoCompacta.ino) **solo mide el llenado, guarda CSV y sirve el dashboard**. No acciona motores y no implementa enclavamientos, sincronización ni finales de carrera. **No declarar compresión automática a partir de este código.**
 
 Antes de implementar automatización se debe diseñar y probar un controlador con estados explícitos `REPOSO`, `BAJANDO`, `SUBIENDO`, `ERROR`; bloquear marcha con tapa abierta; detener ante fin de carrera/falla y disponer de parada física. Probar motores sin carga y después con cargas graduadas.
+
+## Estado de compras
+El equipo informó que **no tiene aún motores, controladores, piñones ni cremalleras**. Consultar [plan de compras y alternativas](../hardware/PLAN_COMPRAS_Y_PRIORIDADES.md). Prioridad: comprobar fuerza requerida y elegir una transmisión segura; el concepto no es compromiso de compra.
 
 ## 6. Documentos/evidencias pendientes
 
