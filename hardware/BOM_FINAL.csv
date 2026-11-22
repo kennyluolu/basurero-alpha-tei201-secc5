@@ -1,29 +1,29 @@
 categoria,componente,cantidad,especificacion,estado,proveedor,precio_unitario_clp,subtotal_clp,observaciones
-Electronica,NodeMCU ESP8266,1,GPIO 3.3V,Usado/prestamo por confirmar,,,,Reemplazo de ESP32 averiado
-Electronica,HC-SR04,1,Sensor ultrasonico de distancia,Usado/prestamo por confirmar,,,,ECHO requiere divisor de nivel
-Electronica,LED verde,1,Indicador,Usado,,,,Requiere resistencia limitadora
-Electronica,LED azul,1,Indicador,Por verificar,,,,Fallo en prototipo Alpha
-Electronica,LED rojo,1,Indicador,Usado,,,,Requiere resistencia limitadora
-Electronica,Resistencias,5,Valores reales por verificar,Usado/por verificar,,,,Incluye limitadoras y divisor ECHO si se confirman
-Electronica,Protoboard,1,Numero de puntos por verificar,Usado,,,,Asegurar montaje
-Electronica,Cables Dupont,1,Conjunto cantidad por contar,Usado,,,,Verificar fijacion y longitud
-Electronica,Cable USB,1,Compatible con NodeMCU,Usado,,,,Costo anterior no individualizado
+Electronica,NodeMCU ESP8266,1,GPIO 3.3V,Usado en Alpha - disponibilidad actual por confirmar,,,,Reemplazo de ESP32 averiado
+Electronica,HC-SR04,1,Sensor ultrasonico de distancia,Usado en Alpha - disponibilidad actual por confirmar,,,,ECHO requiere divisor de nivel
+Electronica,LED verde,1,Indicador,Usado en Alpha - disponibilidad actual por confirmar,,,,Requiere resistencia limitadora
+Electronica,LED azul,1,Indicador,Usado en Alpha - estado actual por verificar,,,,Fallo en prototipo Alpha
+Electronica,LED rojo,1,Indicador,Usado en Alpha - disponibilidad actual por confirmar,,,,Requiere resistencia limitadora
+Electronica,Resistencias,5,Valores reales por verificar,Usado en Alpha - disponibilidad actual por confirmar,,,,Incluye limitadoras y divisor ECHO si se confirman
+Electronica,Protoboard,1,Numero de puntos por verificar,Usado en Alpha - disponibilidad actual por confirmar,,,,Asegurar montaje
+Electronica,Cables Dupont,1,Conjunto cantidad por contar,Usado en Alpha - disponibilidad actual por confirmar,,,,Verificar fijacion y longitud
+Electronica,Cable USB,1,Compatible con NodeMCU,Usado en Alpha - disponibilidad actual por confirmar,,,,Costo anterior no individualizado
 Mecanica,Madera 1,1,Dimensiones originales ancho x largo 46.5 x 51.2 (unidad pendiente),Reutilizada antes del corte,,,,Espesor y dimensiones despues del corte pendientes; no asignada a cara
 Mecanica,Madera 2,1,Dimensiones originales ancho x largo 46.3 x 51.3 (unidad pendiente),Reutilizada antes del corte,,,,Espesor y dimensiones despues del corte pendientes; no asignada a cara
 Mecanica,Madera 3,1,Dimensiones originales ancho x largo 28.9 x 39.9 (unidad pendiente),Reutilizada antes del corte,,,,Espesor y dimensiones despues del corte pendientes; no asignada a cara
 Mecanica,Madera 4,1,Dimensiones originales ancho x largo 34.4 x 54.3 (unidad pendiente),Reutilizada antes del corte,,,,Espesor y dimensiones despues del corte pendientes; no asignada a cara
 Mecanica,Madera 5,1,Dimensiones originales ancho x largo 34.3 x 56.0 (unidad pendiente),Reutilizada antes del corte,,,,Espesor y dimensiones despues del corte pendientes; no asignada a cara
-Mecanica,Placa compactadora MDF,1,Ancho fondo y espesor pendientes,Propuesta del equipo,,,,Dimensionar fuerza guia y holguras
-Mecanica,Guías de placa,2,Material/dimension por definir,Por definir,,,,Evitar giro y atascos
+Mecanica,Placa compactadora MDF,1,Ancho fondo y espesor pendientes,Por verificar si se corto y se dispone,,,,Dimensionar fuerza guia y holguras
+Mecanica,Guías de placa,2,Material/dimension por definir,NO ADQUIRIDO - confirmar alternativa,,,,Evitar giro y atascos
 Mecanica,Tornillos y escuadras,1,Conjunto cantidades por medir,Por confirmar,,,,Fijacion desmontable
-Mecanica,Motor paso a paso 28BYJ-48,2,Version nominal y fuerza de salida por confirmar,Propuesto no confirmado,,,,Dos motores simetricos; medir capacidad con papel
-Electronica,Driver ULN2003,2,Modulo para 28BYJ-48,Propuesto no confirmado,,,,Cada driver necesita cuatro senales
-Mecanica,Pinon impreso 3D,2,Modulo diametro material y acople por definir,Propuesto no confirmado,,,,Compatible con cremallera y carga
-Mecanica,Cremallera vertical,2,Modulo longitud y fijacion por definir,Propuesto no confirmado,,,,Unida a extremos opuestos de placa MDF
-Electronica,Expansion de GPIO o alternativa,1,Por seleccionar tras redisenar pinout,Por evaluar,,,,No hay 8 GPIO libres seguros en configuracion Alpha
-Electronica,Fuente regulada para dos motores,1,Tension y corriente segun unidades reales,Por evaluar,,,,No alimentar motores desde pines ESP8266
-Seguridad,Finales de carrera,2,Superior e inferior,Por evaluar,,,,Evitar sobrecarrera
-Seguridad,Enclavamiento de tapa,1,Interruptor apto para bloquear marcha,Por evaluar,,,,Impide marcha con acceso a zona de apriete
-Seguridad,Parada y proteccion electrica,1,Desconexion accesible y fusible,Por evaluar,,,,Detener mecanismo independientemente del software
+Mecanica,Motor paso a paso 28BYJ-48,2,Version nominal y fuerza de salida por confirmar,NO ADQUIRIDO - por comprar si se valida diseño,,,,Dos motores simetricos; medir capacidad con papel
+Electronica,Driver ULN2003,2,Modulo para 28BYJ-48,NO ADQUIRIDO - por comprar si se valida diseño,,,,Cada driver necesita cuatro senales
+Mecanica,Pinon impreso 3D,2,Modulo diametro material y acople por definir,NO ADQUIRIDO - por comprar si se valida diseño,,,,Compatible con cremallera y carga
+Mecanica,Cremallera vertical,2,Modulo longitud y fijacion por definir,NO ADQUIRIDO - por comprar si se valida diseño,,,,Unida a extremos opuestos de placa MDF
+Electronica,Expansion de GPIO o alternativa,1,Por seleccionar tras redisenar pinout,NO ADQUIRIDO - seleccionar antes de motorizacion,,,,No hay 8 GPIO libres seguros en configuracion Alpha
+Electronica,Fuente regulada para dos motores,1,Tension y corriente segun unidades reales,NO ADQUIRIDO - seleccionar antes de motorizacion,,,,No alimentar motores desde pines ESP8266
+Seguridad,Finales de carrera,2,Superior e inferior,NO ADQUIRIDO - seleccionar antes de motorizacion,,,,Evitar sobrecarrera
+Seguridad,Enclavamiento de tapa,1,Interruptor apto para bloquear marcha,NO ADQUIRIDO - seleccionar antes de motorizacion,,,,Impide marcha con acceso a zona de apriete
+Seguridad,Parada y proteccion electrica,1,Desconexion accesible y fusible,NO ADQUIRIDO - seleccionar antes de motorizacion,,,,Detener mecanismo independientemente del software
 Seguridad,Tapa con acceso seguro,1,Dimensiones por definir,Por definir,,,,Evitar atrapamientos
 Seguridad,Topes mecanicos,2,Recorrido por definir,Por definir,,,,Evitar sobrecarrera
