@@ -28,6 +28,14 @@ La pauta indica entrega/presentación el **23-11-2026**; el equipo comunicó vie
 
 **Condición habilitante:** según la guía, si `FUENTES.md` falta o está vacío, la nota de **Software es 1,0**, incluso si el sistema funciona.
 
+## Nueva propuesta de mecanismo (22/11)
+- [x] Documentado conceptualmente [doble piñón-cremallera](../diseno-3d/MECANISMO_PINON_CREMALLERA.md): base/tapa nominal 25 × 25 cm, paredes 25 × 33 cm, placa MDF, 2 motores 28BYJ-48 y 2 ULN2003.
+- [ ] Confirmar si motores, drivers, piñones y cremalleras están disponibles y montados.
+- [ ] Medir espesores y dimensiones finales tras cortar madera; verificar que coincide con Fusion 360.
+- [ ] Resolver **8 señales ULN2003** más GPIO de sensor, luces y finales de carrera en ESP8266; rediseñar pinout, fuente y protecciones.
+- [ ] Probar fuerza real de compactación, sincronización, guía, límites y enclavamiento.
+- [ ] Desarrollar y **validar** firmware de motores solo después de contar con el hardware y seguridad; el actual es solo monitor.
+
 ## Hardware — demostración y documentos
 - [ ] Justificar ESP8266 vs ESP32 (reemplazo por avería; capacidad Wi-Fi local y GPIO).
 - [ ] Justificar HC-SR04: magnitud y rango útil; sensibilidad a superficie irregular.
