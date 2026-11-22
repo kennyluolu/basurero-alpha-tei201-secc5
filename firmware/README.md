@@ -20,6 +20,8 @@ Deben medirse **desde la cara del sensor** hasta el nivel de papel, teniendo en 
 
 `llenado_pct = 100×(DISTANCIA_VACIO_CM − distancia)/(DISTANCIA_VACIO_CM − DISTANCIA_LLENO_CM)`, limitado a [0, 100]. **Es una estimación geométrica de altura**, no una medición de volumen o de masa.
 
+El firmware informa por separado lectura y calibración: `/api/estado` incluye `lectura_valida` y `calibracion_valida`. Si el sensor mide pero `DISTANCIA_VACIO_CM <= DISTANCIA_LLENO_CM`, el panel conserva la distancia, muestra que falta calibrar y no inventa un porcentaje; esas lecturas no se guardan en el CSV.
+
 ## Captura y almacenamiento
 - Cada 1 segundo se intentan **tres** lecturas separadas 65 ms; se aceptan al menos 2 válidas y se muestra su mediana/promedio.
 - Si no hay lectura válida, la alerta se apaga y la API entrega `lectura_valida: false`; no convertir una lectura inválida en 0%.
