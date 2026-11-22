@@ -16,6 +16,8 @@ Según el planteamiento del equipo, el papelero tendrá **base cuadrada nominal 
 - [Pruebas del mecanismo y medición de compactación](testing/PROTOCOLO_MECANISMO.md).
 - [Medidas originales de cinco maderas antes del corte](hardware/MEDIDAS_MADERA_ANTES_DE_CORTE.md).
 
+**Inventario confirmado para el mecanismo (22/11): el equipo indicó que todavía NO tiene motores 28BYJ-48, ULN2003 ni piñones/cremalleras.** Son componentes solo propuestos; no están montados ni comprados. [Ver plan de compras y alternativas](hardware/PLAN_COMPRAS_Y_PRIORIDADES.md). Los componentes electrónicos del prototipo Alpha fueron utilizados previamente, pero su disponibilidad física actual se debe confirmar.
+
 **Advertencia de implementación:** el firmware existente únicamente monitorea el nivel; **no acciona los motores**. Dos módulos ULN2003 necesitan ocho señales de control y el pinout previo del ESP8266 no tiene suficientes pines libres adecuados: hay que definir nueva electrónica de expansión/reasignación, alimentación y seguridad. No afirmar compactación motorizada demostrada.
 
 ## Entrega final y documentación
@@ -37,7 +39,7 @@ Kenny Luo · Lucas Soto · Vicente Lechuga · Agustín Ly · Benjamín Brito (di
 ## Componentes actuales y materiales principales
 - **NodeMCU ESP8266**, elegido tras dañarse el ESP32 inicialmente utilizado.
 - **HC-SR04** y LEDs verde, azul y rojo con sus resistencias y cableado (el LED azul falló en Alpha; verificar antes de presentar).
-- Protoboard, conexión USB y fuente apropiada.
+- Protoboard y conexión USB utilizados durante Alpha (disponibilidad física actual por confirmar); la fuente adecuada para motores no está adquirida.
 - Madera original disponible y previamente cortada para la estructura; las **medidas nominales de diseño** son 25 × 25 × 33 cm, pero faltan medidas **finales reales** y espesor. Placa compactadora de MDF prevista.
 - **Advertencia:** el servo SG90 de Alpha no ha demostrado fuerza suficiente y no debe tratarse como compactador automatizado.
 
