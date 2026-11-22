@@ -157,7 +157,7 @@ void enviarEstado() {
   s+=F(",\"distancia_cm\":");
   s+=lecturaValida ? String(distancia,1) : String(F("null"));
   s+=F(",\"llenado_pct\":");
-  s+=lecturaValida ? String(porcentaje,1) : String(F("null"));
+  s+=(lecturaValida && calibracionValida) ? String(porcentaje,1) : String(F("null"));
   s+=F(",\"sesion\":"); s+=String(sesion);
   s+=F(",\"estado\":\"");
   if (!lecturaValida) s+=F("Sin lectura");
