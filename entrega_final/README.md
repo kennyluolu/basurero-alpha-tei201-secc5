@@ -1,41 +1,43 @@
-# EcoCompacta | Entrega final TEI201
+# EcoCompacta — Carpeta central de entrega final
 
-> **Estado del documento:** borrador de trabajo (22-11-2026). **Entrega y presentación previstas:** viernes 27-11-2026. Faltan rúbrica, instrucciones finales, planos medidos y pruebas del montaje. No presentar este documento como evidencia de funciones aún no demostradas.
+**Proyecto:** basurero para papel seco con sensor de llenado y placa compactadora.  
+**Curso:** TEI201, UAI, sección 5.  
+**Fecha de preparación:** 22 de noviembre de 2026. **Fecha comunicada por el equipo:** viernes 27 de noviembre. **La guía encontrada indica:** 23 de noviembre. Confirmar fecha aplicable.
 
-## 1. Problema y propuesta
-El papel de oficina limpio y seco ocupa volumen con baja densidad aparente. EcoCompacta busca medir el nivel de llenado de un recipiente y facilitar su compactación, maximizando el uso del volumen disponible. El alcance se restringe a **papel seco**: no usar vidrio, metal, líquidos, baterías ni residuos sanitarios.
+## Objetivo y ciclo IoT
+Medir el nivel de llenado del papelero con HC-SR04, procesar lecturas en ESP8266, **almacenar un histórico de forma persistente**, mostrar datos actuales e históricos en un dashboard Wi-Fi local y generar alertas para decidir cuándo compactar o vaciar el papel seco.
 
-## 2. Hardware y estado real
-- **Controlador vigente:** NodeMCU ESP8266 (el ESP32 original se averió y fue sustituido).
-- **Sensor:** ultrasónico HC-SR04, con adaptación segura de ECHO de 5 V a 3,3 V.
-- **Indicadores:** LEDs verde y rojo, con estado azul pendiente de comprobación.
-- **Interfaz:** panel web local vía punto de acceso Wi-Fi, IP `192.168.4.1`.
-- **Estructura:** madera disponible para cuerpo y placa de compactación (faltan dimensiones definitivas y fotografías).
-- **Compactación:** mecanismo final pendiente de diseño, armado y mediciones. El SG90 usado en la etapa previa **no ha demostrado capacidad para comprimir papel**.
+**La compactación es un subsistema mecánico independiente del firmware actual.** La estructura prevista usa madera reutilizada; su método de accionamiento definitivo se elegirá según fuerza y medidas. No presentar como automática una compactación manual.
 
-## 3. Definición operativa para el viernes
-**Mínimo verificable:** estructura estable + papel seco + nivel de llenado medido + LEDs/panel local + placa compactadora guiada que comprima una muestra de papel de forma segura.
-**Mejora opcional:** accionamiento motorizado **solo** si se dimensiona, protege y prueba con enclavamiento, finales de carrera y parada. No energizar un accionamiento improvisado delante de personas.
+## Requisitos de la rúbrica oficial
+| Dimensión | Peso |
+|---|---:|
+| Software: captura, persistencia, dashboard, información, calidad | 30 % |
+| Hardware: componentes, esquemático, BOM, montaje, reparación | 30 % |
+| Diseño 3D: gemelo, Fusion, encapsulado, planos y renders | 20 % |
+| Testing: protocolo, datos, fallas y validación del problema | 10 % |
+| GitHub: estructura, trazabilidad, fuentes y archivos | 5 % |
+| Presentación en vivo | 5 % |
 
-**Importante:** si el movimiento queda manual, describir el resultado como “compactación mecánica manual asistida por monitoreo electrónico”, **no** como compactación automática.
+Ver [matriz detallada contra pauta](MATRIZ_RUBRICA.md).
 
-## 4. Evidencias que se deben subir
-1. Plano dimensionado definitivo y fotos reales de la construcción.
-2. Diagrama eléctrico que coincida con el cableado final.
-3. Inventario con material reutilizado, prestado y comprado.
-4. Video de detección de niveles y de la compactación (si funciona).
-5. Registro de al menos tres ensayos con misma cantidad de papel: altura/volumen inicial y final, reducción calculada y observaciones.
-6. Capturas de la interfaz y código exacto ejecutado en el prototipo.
-7. Rúbrica final con una matriz requisito → evidencia.
+## Entregables y estado a 22/11
+- **Software:** [código de propuesta ESP8266 + LittleFS](../firmware/EcoCompacta/EcoCompacta.ino), [guía de uso](../firmware/README.md). **NO compilado ni validado en placa final.**
+- **Hardware:** [pinout preliminar](../hardware/ESQUEMA_PRELIMINAR_FINAL.md), [BOM por completar](../hardware/BOM_FINAL.csv). Se necesitan diagrama real, costos y 3 fotos.
+- **Diseño:** [Fusion 360 de Alpha](../diseno_3d/Basurero%20Compactador.f3d). Actualizar con dimensiones reales, componentes, accesos, PDF de planos y renders.
+- **Testing:** [protocolo](PROTOCOLO_PRUEBAS.md), [CSV de resultados por completar](datos_pruebas.csv).
+- **Documentación de fuentes/IA:** [FUENTES.md](../FUENTES.md) creado, verificar versiones y datos.
+- **Presentación:** [guion](PRESENTACION.md) y [cronograma](CRONOGRAMA.md).
 
-## 5. Documentación de entrega
-- [Plan de trabajo](CRONOGRAMA.md)
-- [Materiales y decisiones de construcción](MATERIALES_Y_MONTAJE.md)
-- [Ensayos y evidencias](PROTOCOLO_PRUEBAS.md)
-- [Presentación oral](PRESENTACION.md)
-- [Control de rúbrica](MATRIZ_RUBRICA.md)
+## Foco de validación
+1. Sensor mide distancia real y establece alerta con umbral.
+2. Las lecturas persisten en LittleFS **después de reiniciar**.
+3. Dashboard muestra histórico y actualización actual, con información para decidir.
+4. Estructura se abre para acceder a los componentes sin destruirse.
+5. Se documenta al menos una falla real con explicación y corrección.
+6. Se demuestra el sistema **en vivo**; video es evidencia de apoyo, no sustituto.
 
-## 6. Referencias a la etapa anterior
-El código original se encuentra en `software/BasureroAlpha_ESP8266/BasureroAlpha_ESP8266.ino`. El diseño Fusion 360 previo está en `diseno_3d/Basurero Compactador.f3d`. El README del prototipo Alpha describe sus limitaciones. No mezclar datos de distintas etapas ni atribuir resultados de compactación al prototipo anterior.
+## Faltantes requeridos antes de entregar
+Planos del equipo con cotas, modelo final, fotografías reales, circuito final, pruebas cuantitativas, informe, diapositivas y confirmación de fecha de evaluación.
 
-**Equipo:** Kenny Luo, Lucas Soto, Vicente Lechuga, Agustín Ly, Benjamín Brito. Los roles finales deben ser confirmados por los integrantes.
+**Principio:** no afirmar que una función o métrica está demostrada hasta que se ensaye.
