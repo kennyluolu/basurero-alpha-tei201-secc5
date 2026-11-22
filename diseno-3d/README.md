@@ -1,13 +1,15 @@
-# Gemelo 3D — entrega final
+# Gemelo 3D — avance de entrega final
 
-Se conserva el archivo Fusion 360 de la etapa Alpha en [`diseno_3d/Basurero Compactador.f3d`](../diseno_3d/Basurero%20Compactador.f3d).
+En esta carpeta se ha incluido una **copia íntegra del modelo de Fusion 360 de la etapa Alpha**: [Basurero Compactador.f3d](Basurero%20Compactador.f3d). **Se comprobó su presencia en GitHub, no que abra ni que coincida con las dimensiones finales.** El original sigue en `diseno_3d/`.
 
-**Pendiente:** recibir medidas del montaje final y actualizar el modelo para que incluya carcasa de madera, placa compactadora, guías, ESP8266, HC-SR04, LEDs, conexiones y forma de acceso para mantenimiento. Añadir actuadores **solo** si están presentes físicamente.
+## Acciones pendientes para el Avance #3
+- Medir las piezas de madera y comparar con el ensamble de Fusion 360.
+- Representar físicamente el contenedor, placa, guías, ESP8266 NodeMCU, HC-SR04, LEDs, fuente/cables y fijaciones desmontables.
+- Garantizar acceso para reparar sensor y microcontrolador sin destruir el encapsulado.
+- Usar sólidos referenciales cuando no haya modelos exactos de los componentes, **con dimensiones y ubicación reales**.
+- Revisar intersecciones, holguras y topes.
+- Exportar vistas ortogonales acotadas, tolerancias y escala en PDF.
+- Preparar render exterior y render interior/explosionado con materiales.
+- Reemplazar la **copia Alpha** por el modelo definitivo únicamente después de verificar las dimensiones y que abra sin errores.
 
-## Pauta de Avance #3
-- [ ] Ensamble completo con componentes de volumen realista.
-- [ ] Parametrización en Fusion 360, holguras/tolerancias y comprobación de interferencias.
-- [ ] Vistas ortogonales, cotas, escala, tolerancias en un plano PDF.
-- [ ] Render exterior e interior/explosionado, con materiales e iluminación.
-- [ ] Archivo `.f3d` o `.f3z` final abre sin errores.
-- [ ] Elementos desmontables para reparar sensor, MCU y cableado.
+**No describir el .f3d actual como gemelo definitivo mientras no se hagan estas comprobaciones.**
