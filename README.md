@@ -8,6 +8,15 @@ El papel limpio y seco ocupa mucho espacio en papeleros de oficinas y salas de e
 
 **Ciclo IoT evaluado:** HC-SR04 → ESP8266 → LittleFS (CSV en memoria flash, si funciona) → Dashboard local → alerta según porcentaje estimado.
 
+## Diseño mecánico de la entrega final (propuesto, no validado)
+Según el planteamiento del equipo, el papelero tendrá **base cuadrada nominal de 25 × 25 cm, paredes de 25 × 33 cm y tapa de 25 × 25 cm**, con una **placa móvil de MDF**. El accionamiento que se quiere construir consiste en **dos piñones y dos cremalleras verticales** a los lados, impulsados por **2 motores 28BYJ-48 con 2 módulos ULN2003**. El controlador previsto es **ESP8266** (no el ESP32 anterior). **Estas son medidas de diseño comunicadas por el equipo, no medidas finales verificadas después de cortar madera.**
+
+- [Descripción del mecanismo piñón–cremallera](diseno-3d/MECANISMO_PINON_CREMALLERA.md).
+- [Compatibilidad eléctrica y GPIO de motores con ESP8266](hardware/INTEGRACION_28BYJ48_ESP8266.md).
+- [Medidas originales de cinco maderas antes del corte](hardware/MEDIDAS_MADERA_ANTES_DE_CORTE.md).
+
+**Advertencia de implementación:** el firmware existente únicamente monitorea el nivel; **no acciona los motores**. Dos módulos ULN2003 necesitan ocho señales de control y el pinout previo del ESP8266 no tiene suficientes pines libres adecuados: hay que definir nueva electrónica de expansión/reasignación, alimentación y seguridad. No afirmar compactación motorizada demostrada.
+
 ## Entrega final y documentación
 | Área de la pauta | Enlace | Estado |
 |---|---|---|
@@ -28,7 +37,7 @@ Kenny Luo · Lucas Soto · Vicente Lechuga · Agustín Ly · Benjamín Brito (di
 - **NodeMCU ESP8266**, elegido tras dañarse el ESP32 inicialmente utilizado.
 - **HC-SR04** y LEDs verde, azul y rojo con sus resistencias y cableado (el LED azul falló en Alpha; verificar antes de presentar).
 - Protoboard, conexión USB y fuente apropiada.
-- Madera disponible para estructura y placa de compactación, con medidas y fijaciones finales pendientes.
+- Madera original disponible y previamente cortada para la estructura; las **medidas nominales de diseño** son 25 × 25 × 33 cm, pero faltan medidas **finales reales** y espesor. Placa compactadora de MDF prevista.
 - **Advertencia:** el servo SG90 de Alpha no ha demostrado fuerza suficiente y no debe tratarse como compactador automatizado.
 
 ## Cómo ejecutar el software
