@@ -12,8 +12,8 @@
 | Cables/protoboard/USB | Usados en Alpha | Prototipado y carga de firmware |
 | Servo SG90 | Prestado en Alpha, sin ensayo de compactación | **No asumir** que sirve para comprimir |
 | Modelo de Fusion 360 | Existe, validar dimensiones | Plano de referencia |
-| Motores 28BYJ-48 y módulos ULN2003 | **2 + 2 propuestos; disponibilidad no confirmada** | Tracción de cremalleras con piñones |
-| Piñones y cremalleras | **2 + 2 propuestos** | Transmisión lateral vertical |
+| Motores 28BYJ-48 y módulos ULN2003 | **2 + 2 propuestos; NO LOS TIENEN, no adquiridos** | Tracción de cremalleras con piñones |
+| Piñones y cremalleras | **2 + 2 propuestos; NO LOS TIENEN, no adquiridos** | Transmisión lateral vertical |
 | Placa MDF | Propuesta; medidas por medir | Compresión del papel |
 
 Las cinco piezas originales y sus dimensiones informadas están en [MEDIDAS_MADERA_ANTES_DE_CORTE.md](../hardware/MEDIDAS_MADERA_ANTES_DE_CORTE.md). **No equivalen a medidas del papelero ya construido.**
@@ -25,6 +25,9 @@ Las cinco piezas originales y sus dimensiones informadas están en [MEDIDAS_MADE
 - Se documentó el diseño en [MECANISMO_PINON_CREMALLERA.md](../diseno-3d/MECANISMO_PINON_CREMALLERA.md) y las restricciones eléctricas en [INTEGRACION_28BYJ48_ESP8266.md](../hardware/INTEGRACION_28BYJ48_ESP8266.md).
 
 **El mecanismo no está validado:** hay que medir capacidad de compresión real, obtener piñones/cremalleras compatibles, incluir guías, límites de carrera, enclavamiento de tapa y alimentación protegida. El firmware actual no contiene control de motores.
+
+## Actualización de inventario (22-11-2026)
+El equipo confirmó que **no dispone de los motores 28BYJ-48 ni módulos ULN2003, piñones ni cremalleras**. El listado es propuesta técnica, no materiales comprados ni montados. Los componentes de sensado/ESP8266 usados en Alpha deben verificarse físicamente para esta entrega. Ver [plan de compras priorizado](../hardware/PLAN_COMPRAS_Y_PRIORIDADES.md). **No invertir en los motores pequeños sin comprobar primero que tienen suficiente fuerza para compactar papel.**
 
 ## Materiales mecánicos sugeridos
 - Tornillos, tuercas, escuadras y adhesivo apto para madera.
@@ -59,4 +62,4 @@ Las cinco piezas originales y sus dimensiones informadas están en [MEDIDAS_MADE
 | Altura de salida del compactador | Pendiente |
 
 ## Lista de compra
-Se completará **solo** cuando estén las medidas y el mecanismo decidido. Separar piezas reutilizadas, prestadas y compradas y guardar comprobantes.
+Existe un [plan de compras y alternativas con precios de referencia](../hardware/PLAN_COMPRAS_Y_PRIORIDADES.md). Se completará el costo real **solo** cuando estén las medidas y el mecanismo decidido. Separar piezas reutilizadas, prestadas y compradas y guardar comprobantes.
