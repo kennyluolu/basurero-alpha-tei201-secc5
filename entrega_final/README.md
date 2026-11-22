@@ -9,6 +9,9 @@ Medir el nivel de llenado del papelero con HC-SR04, procesar lecturas en ESP8266
 
 **La compactación es un subsistema mecánico independiente del firmware actual.** La estructura prevista usa madera reutilizada; su método de accionamiento definitivo se elegirá según fuerza y medidas. No presentar como automática una compactación manual.
 
+## Mecanismo propuesto por el equipo (22/11)
+Cuerpo nominal 25 × 25 cm de base y 33 cm de altura de pared, tapa 25 × 25 cm con abertura central, placa móvil MDF y **doble piñón-cremallera vertical** con dos motores **28BYJ-48**, dos drivers **ULN2003** y controlador **ESP8266**. **Las dimensiones y la automatización aún deben verificarse**. Ver [mecanismo](../diseno-3d/MECANISMO_PINON_CREMALLERA.md) y [compatibilidad GPIO/alimentación](../hardware/INTEGRACION_28BYJ48_ESP8266.md). El firmware actual **solo monitorea**.
+
 ## Requisitos de la rúbrica oficial
 | Dimensión | Peso |
 |---|---:|
