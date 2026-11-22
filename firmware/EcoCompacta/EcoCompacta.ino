@@ -24,6 +24,7 @@ const char* RUTA_LOG_ANT = "/historico_anterior.csv";
 ESP8266WebServer servidor(80);
 
 bool lecturaValida = false;
+bool calibracionValida = false;
 bool almacenamientoOK = false;
 float distancia = -1.0f;
 float porcentaje = 0.0f;
@@ -35,7 +36,7 @@ void configurarLeds() {
   digitalWrite(LED_VERDE, LOW);
   digitalWrite(LED_AZUL, LOW);
   digitalWrite(LED_ROJO, LOW);
-  if (!lecturaValida) return;
+  if (!lecturaValida || !calibracionValida) return;
   if (porcentaje < 50.0f) digitalWrite(LED_VERDE, HIGH);
   else if (porcentaje < 80.0f) digitalWrite(LED_AZUL, HIGH);
   else digitalWrite(LED_ROJO, HIGH);
@@ -62,7 +63,8 @@ void medir() {
     if (cm > 0.0f) a[n++] = cm;
     if (i < 2) delay(65); // Evita interferencia entre pulsos
   }
-  lecturaValida = n >= 2 && (DISTANCIA_VACIO_CM > DISTANCIA_LLENO_CM);
+  calibracionValida = DISTANCIA_VACIO_CM > DISTANCIA_LLENO_CM;
+  lecturaValida = n >= 2;
   if (!lecturaValida) {
     distancia = -1.0f;
     configurarLeds();
@@ -75,11 +77,17 @@ void medir() {
     if (a[1] < a[0]) {float t=a[0];a[0]=a[1];a[1]=t;}
     distancia = a[1]; // Mediana de tres lecturas
   } else distancia = 0.5f*(a[0]+a[1]); // Promedio si hay dos
-  porcentaje = constrain(
-    100.0f*(DISTANCIA_VACIO_CM-distancia)/
-    (DISTANCIA_VACIO_CM-DISTANCIA_LLENO_CM),0.0f,100.0f);
+  if (calibracionValida) {
+    porcentaje = constrain(
+      100.0f*(DISTANCIA_VACIO_CM-distancia)/
+      (DISTANCIA_VACIO_CM-DISTANCIA_LLENO_CM),0.0f,100.0f);
+  }
   configurarLeds();
-  Serial.printf("Distancia=%.1f cm | Nivel=%.1f%%\n",distancia,porcentaje);
+  if (!calibracionValida) {
+    Serial.printf("Distancia=%.1f cm | calibracion invalida\n",distancia);
+  } else {
+    Serial.printf("Distancia=%.1f cm | Nivel=%.1f%%\n",distancia,porcentaje);
+  }
 }
 
 bool escribirCabeceraSiFalta() {
@@ -93,7 +101,7 @@ bool escribirCabeceraSiFalta() {
 }
 
 void guardarEnCSV() {
-  if (!almacenamientoOK || !lecturaValida) return;
+  if (!almacenamientoOK || !lecturaValida || !calibracionValida) return;
   if (!escribirCabeceraSiFalta()) {almacenamientoOK=false; return;}
   File prueba=LittleFS.open(RUTA_LOG,"r");
   if (!prueba) {almacenamientoOK=false; return;}
@@ -140,6 +148,8 @@ void iniciarAlmacenamiento() {
 void enviarEstado() {
   String s=F("{\"lectura_valida\":");
   s+=lecturaValida ? F("true") : F("false");
+  s+=F(",\"calibracion_valida\":");
+  s+=calibracionValida ? F("true") : F("false");
   s+=F(",\"almacenamiento_ok\":");
   s+=almacenamientoOK ? F("true") : F("false");
   s+=F(",\"historial_registrado\":");
@@ -151,6 +161,7 @@ void enviarEstado() {
   s+=F(",\"sesion\":"); s+=String(sesion);
   s+=F(",\"estado\":\"");
   if (!lecturaValida) s+=F("Sin lectura");
+  else if (!calibracionValida) s+=F("Distancia disponible; calibracion pendiente");
   else if (porcentaje < 50.0f) s+=F("Disponible");
   else if (porcentaje < 80.0f) s+=F("Medio lleno");
   else s+=F("Lleno: evaluar compactar o vaciar");
@@ -199,6 +210,10 @@ async function refrescar(){
   if(!x.lectura_valida){
    el('nivel').textContent='--%';el('dist').textContent='--';
    el('accion').textContent='Sensor sin lectura válida: revisar posición, cableado y objetos';el('fill').style.width='0%';return;
+  }
+  if(!x.calibracion_valida){
+   el('nivel').textContent='--%';el('dist').textContent=Number(x.distancia_cm).toFixed(1);
+   el('accion').textContent='Distancia disponible; falta calibrar vacío y lleno';el('fill').style.width='0%';return;
   }
   const p=Number(x.llenado_pct);
   el('nivel').textContent=p.toFixed(1)+'%';el('dist').textContent=Number(x.distancia_cm).toFixed(1);
