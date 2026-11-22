@@ -13,6 +13,7 @@ Según el planteamiento del equipo, el papelero tendrá **base cuadrada nominal 
 
 - [Descripción del mecanismo piñón–cremallera](diseno-3d/MECANISMO_PINON_CREMALLERA.md).
 - [Compatibilidad eléctrica y GPIO de motores con ESP8266](hardware/INTEGRACION_28BYJ48_ESP8266.md).
+- [Pruebas del mecanismo y medición de compactación](testing/PROTOCOLO_MECANISMO.md).
 - [Medidas originales de cinco maderas antes del corte](hardware/MEDIDAS_MADERA_ANTES_DE_CORTE.md).
 
 **Advertencia de implementación:** el firmware existente únicamente monitorea el nivel; **no acciona los motores**. Dos módulos ULN2003 necesitan ocho señales de control y el pinout previo del ESP8266 no tiene suficientes pines libres adecuados: hay que definir nueva electrónica de expansión/reasignación, alimentación y seguridad. No afirmar compactación motorizada demostrada.
