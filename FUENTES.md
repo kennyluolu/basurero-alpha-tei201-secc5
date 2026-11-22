@@ -43,7 +43,14 @@
 - **Adaptación al problema:** los datos se expresan como distancia (cm), porcentaje aproximado de llenado y alerta para decidir cuándo compactar o vaciar el recipiente de papel seco. La solución no activa un mecanismo de compactación motorizado.
 - **Validación real:** **pendiente** de que el equipo compile en Arduino IDE, verifique cada función en el montaje y anote la versión instalada; no declarar que un código generado ha sido probado si aún no lo ha sido.
 
-### 3.3. Otros usos de IA
+### 3.3. Documentación del mecanismo mecánico (22-11-2026)
+- **Origen del concepto:** el equipo proporcionó una referencia visual de piñón y cremallera y describió el mecanismo de doble cremallera, placa móvil MDF, caja nominal 25 × 25 × 33 cm, dos 28BYJ-48 y dos ULN2003.
+- **Herramienta utilizada:** ChatGPT (GPT-6) para estructurar/redactar la [memoria mecánica](diseno-3d/MECANISMO_PINON_CREMALLERA.md), el [análisis eléctrico](hardware/INTEGRACION_28BYJ48_ESP8266.md), actualizar el inventario y registrar restricciones de seguridad y GPIO.
+- **Adaptaciones propuestas:** sustitución documental de ESP32 por el ESP8266 efectivamente usado por el equipo; separar objetivos de funcionamiento de pruebas que todavía no se han efectuado; incluir comprobación de torque, alineación, finales de carrera y alimentación dedicada.
+- **Comprensión y validación pendientes:** antes de presentar, comprobar físicamente montaje y explicar por qué dos ULN2003 necesitan ocho señales, cómo se convierte giro en movimiento lineal, cuáles son los límites de carga y cómo se detiene de forma segura.
+- **Referencia visual aportada:** captura de un mecanismo de piñón–cremallera, identificada por el equipo como referencia conceptual; todavía no se ha copiado un modelo CAD de dicha imagen.
+
+### 3.4. Otros usos de IA
 Si se utilizan posteriormente Claude, Copilot, software de generación de imágenes, prompts para planos o asistentes de programación, registrar aquí la herramienta, fecha, propósito, parte generada, adaptación y prueba realizada. La guía permite IA **si se declara y se comprende**.
 
 ## 4. Responsabilidad y revisión
