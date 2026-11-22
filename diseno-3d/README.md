@@ -2,6 +2,10 @@
 
 En esta carpeta se ha incluido una **copia íntegra del modelo de Fusion 360 de la etapa Alpha**: [Basurero Compactador.f3d](Basurero%20Compactador.f3d). **Se comprobó su presencia en GitHub, no que abra ni que coincida con las dimensiones finales.** El original sigue en `diseno_3d/`.
 
+## Medidas disponibles de madera original
+
+Se registraron **cinco piezas antes de cortarlas**; ver [medidas originales](../hardware/MEDIDAS_MADERA_ANTES_DE_CORTE.md). Aún no se conocen espesores, cortes definitivos ni qué pieza corresponde a cada cara; estas cifras no son las dimensiones finales del modelo.
+
 ## Acciones pendientes para el Avance #3
 - Medir las piezas de madera y comparar con el ensamble de Fusion 360.
 - Representar físicamente el contenedor, placa, guías, ESP8266 NodeMCU, HC-SR04, LEDs, fuente/cables y fijaciones desmontables.
