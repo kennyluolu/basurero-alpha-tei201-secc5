@@ -1,0 +1,17 @@
+categoria,componente,cantidad,especificacion,estado,proveedor,precio_unitario_clp,subtotal_clp,observaciones
+Electronica,NodeMCU ESP8266,1,GPIO 3.3V,Usado/prestamo por confirmar,,,,Reemplazo de ESP32 averiado
+Electronica,HC-SR04,1,Sensor ultrasonico de distancia,Usado/prestamo por confirmar,,,,ECHO requiere divisor de nivel
+Electronica,LED verde,1,Indicador,Usado,,,,Requiere resistencia limitadora
+Electronica,LED azul,1,Indicador,Por verificar,,,,Fallo en prototipo Alpha
+Electronica,LED rojo,1,Indicador,Usado,,,,Requiere resistencia limitadora
+Electronica,Resistencias,5,Valores reales por verificar,Usado/por verificar,,,,Incluye limitadoras y divisor ECHO si se confirman
+Electronica,Protoboard,1,Numero de puntos por verificar,Usado,,,,Asegurar montaje
+Electronica,Cables Dupont,1,Conjunto cantidad por contar,Usado,,,,Verificar fijacion y longitud
+Electronica,Cable USB,1,Compatible con NodeMCU,Usado,,,,Costo anterior no individualizado
+Mecanica,Madera estructural,1,Conjunto de piezas dimensiones por medir,Disponible,,,,Reutilizacion
+Mecanica,Placa compactadora,1,Madera reforzada o metal por definir,Por definir,,,,Dimensionar fuerza y tolerancias
+Mecanica,Guías de placa,2,Material/dimension por definir,Por definir,,,,Evitar giro y atascos
+Mecanica,Tornillos y escuadras,1,Conjunto cantidades por medir,Por confirmar,,,,Fijacion desmontable
+Mecanica,Accionamiento,1,Manual o motorizado por decidir,Por definir,,,,No asumir SG90 adecuado
+Seguridad,Tapa con acceso seguro,1,Dimensiones por definir,Por definir,,,,Evitar atrapamientos
+Seguridad,Topes mecanicos,2,Recorrido por definir,Por definir,,,,Evitar sobrecarrera
