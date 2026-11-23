@@ -25,4 +25,5 @@
 - [ ] Inventario físico actualizado.
 - [ ] Probar corriente, alimentación y protecciones.
 - [ ] Fotografías, videos, tablas de ensayos.
-- [x] Fecha de entrega GitHub: 23/11/2026.\n- [ ] Confirmar hora y duración de presentación oral.
+- [x] Fecha de entrega GitHub: 23/11/2026.
+- [ ] Confirmar hora y duración de presentación oral.
