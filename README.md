@@ -31,7 +31,7 @@ Según el planteamiento del equipo, el papelero tendrá **base cuadrada nominal 
 | Fuentes / IA | [FUENTES.md](FUENTES.md) | Creado; verificar versiones y detalles con equipo |
 | Presentación | [Guion](entrega_final/PRESENTACION.md) · [Cronograma](entrega_final/CRONOGRAMA.md) | Ajustar al tiempo docente |
 
-La guía de Avance #3 del DEC indica **23/11/2026**; el equipo indicó su intención de presentar el **viernes 27/11/2026**. **Confirmar fecha oficial de la sección.**
+El equipo confirma que la **entrega de GitHub es el 23/11/2026**. La presentación oral se ha previsto para el **viernes 27/11/2026**; confirmar con el docente la hora y fecha oral definitivas.
 
 ## Integrantes
 Kenny Luo · Lucas Soto · Vicente Lechuga · Agustín Ly · Benjamín Brito (distribución de funciones por confirmar con el equipo).
