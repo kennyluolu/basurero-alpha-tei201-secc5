@@ -1,14 +1,14 @@
-# Cronograma de ejecución | 22–27 noviembre 2026
+# Cronograma de cierre | 22–27 noviembre 2026
 
-**Fecha de referencia:** domingo 22-11-2026. **Hito:** presentación viernes 27-11-2026. Ajustar en cuanto el equipo confirme la hora exacta y las instrucciones docentes.
+**Fecha de referencia:** domingo 22-11-2026. **Entrega del repositorio GitHub:** lunes 23-11-2026 (confirmado por el equipo). **Presentación oral prevista:** viernes 27-11-2026; confirmar hora con el docente.
 
 | Fecha | Objetivo verificable | Evidencia / criterio de salida |
 |---|---|---|
 | **Dom. 22** | Organizar GitHub; leer rúbrica; definir mecanismo; revisar medidas y piezas disponibles | Repositorio estructurado, lista de pendientes, elección mecánica documentada |
-| **Lun. 23** | Construir cuerpo de madera y placa; fijar guías; validar recorrido a mano | Fotos del montaje + plano corregido + sistema sin atascos |
-| **Mar. 24** | Cablear ESP8266 y HC-SR04; probar LED y página web | Registro de lecturas reales + video de panel |
-| **Mié. 25** | Integrar la compactación y las protecciones pertinentes; corregir fallas | Video de funcionamiento sin manos expuestas + bitácora |
-| **Jue. 26** | Ensayos repetidos; gráficos o tablas; cerrar informe y diapositivas; ensayo oral | Resultados cuantitativos; rúbrica revisada; ensayo cronometrado |
+| **Lun. 23** | Cerrar y entregar el repositorio GitHub; subir solo documentos, código y evidencias disponibles y verificables | Rama `entrega-final-2026` organizada; faltantes señalados sin inventar resultados |
+| **Mar. 24** | Continuar el montaje mecánico y cotejar medidas reales con Fusion 360 | Fotos y medidas identificadas; CAD no se declara final sin inspección |
+| **Mié. 25** | Cablear y probar el monitoreo con ESP8266 y HC-SR04; revisar seguridad de la mecánica | Registros de lecturas reales, solo si se ejecutan; bitácora de fallas |
+| **Jue. 26** | Completar mediciones reales, materiales de presentación y ensayo oral | Resultados solo de pruebas ejecutadas; faltantes marcados con claridad |
 | **Vie. 27** | Montaje final, revisión eléctrica, traslado y presentación | Demostración segura; respaldo offline; archivos accesibles |
 
 ## Prioridad si el tiempo se reduce
@@ -25,4 +25,4 @@
 - [ ] Inventario físico actualizado.
 - [ ] Probar corriente, alimentación y protecciones.
 - [ ] Fotografías, videos, tablas de ensayos.
-- [ ] Confirmar hora de presentación y duración.
+- [x] Fecha de entrega GitHub: 23/11/2026.\n- [ ] Confirmar hora y duración de presentación oral.
