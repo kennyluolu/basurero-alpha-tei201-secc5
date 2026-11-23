@@ -70,7 +70,7 @@
 ## Preparación previa
 
 - Asignar una sección a cada integrante: Kenny Luo, Lucas Soto, Vicente Lechuga, Agustín Ly y Benjamín Brito.
-- Confirmar duración exigida y fecha/hora con el profesor.
+- El equipo confirma que el repositorio GitHub se entrega el 23/11/2026. Confirmar con el profesor la fecha/hora y duración de la presentación oral.
 - Ensayar tres veces con cronómetro y montaje real.
 - Llevar cable USB, fuente apropiada, regla, papel seco y copia offline de la presentación.
 - Tener abierto el dashboard antes de iniciar; probar conexión Wi-Fi y recargar el teléfono/laptop.
