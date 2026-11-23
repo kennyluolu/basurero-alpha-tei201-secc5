@@ -2,7 +2,7 @@
 
 **Proyecto:** basurero para papel seco con sensor de llenado y placa compactadora.  
 **Curso:** TEI201, UAI, sección 5.  
-**Fecha de preparación:** 22 de noviembre de 2026. **Fecha comunicada por el equipo:** viernes 27 de noviembre. **La guía encontrada indica:** 23 de noviembre. Confirmar fecha aplicable.
+**Fecha de preparación:** 22 de noviembre de 2026. **Entrega de GitHub confirmada por el equipo:** 23 de noviembre. **Presentación oral prevista:** viernes 27 de noviembre; confirmar hora con el docente.
 
 ## Objetivo y ciclo IoT
 Medir el nivel de llenado del papelero con HC-SR04, procesar lecturas en ESP8266, **almacenar un histórico de forma persistente**, mostrar datos actuales e históricos en un dashboard Wi-Fi local y generar alertas para decidir cuándo compactar o vaciar el papel seco.
