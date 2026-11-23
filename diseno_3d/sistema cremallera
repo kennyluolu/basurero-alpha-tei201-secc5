@@ -1,0 +1,32 @@
+Plano de Corte: Piñón de Madera (Cotas en mm)
+                       Ø 42.0 (Exterior)
+                       Ø 36.0 (Primitivo)
+                       Ø 28.5 (Raíz diente)
+                          _..----.._
+                        .'  _...._  '.
+                       /   /      \   \
+                      |   |  (O)   |   |  <-- Agujero central Ø 5.0 mm
+                       \   \  |   /   /
+                        '._ '..|.' _.'
+                           '--.|.-'
+                               |
+                        Agujero lateral Ø 2.5 mm
+                    (para tornillo prisionero al eje)
+
+                    Detalle de Cotas de Dientes: Cremallera de Madera (en mm)
+
+    |<---- 15.25 ---->|<-- 6.75 -->|
+    +-----------------+
+    |                 |----\         ---
+    |                 |     | 2.5     |
+    |                 |----/          | Paso = 9.42 mm
+    |                 |   /           | (centro a centro)
+    |                 |  |  2.5       |
+    |                 |   \          ---
+    |                 |----\
+    |                 |     |
+    +-----------------+----/
+     (Lomo sólido)     (Diente)
+     
+     Largo total = 310 mm (32 dientes)
+     Espesor MDF = 6 mm o 9 mm
