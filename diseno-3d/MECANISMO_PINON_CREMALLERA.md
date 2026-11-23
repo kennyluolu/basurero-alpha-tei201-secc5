@@ -16,6 +16,28 @@
 
 Las medidas de las **cinco piezas de madera antes de cortarlas** están documentadas en [hardware/MEDIDAS_MADERA_ANTES_DE_CORTE.md](../hardware/MEDIDAS_MADERA_ANTES_DE_CORTE.md). No deben confundirse con las dimensiones nominales de **25 × 25 × 33 cm** de esta propuesta ni con medidas verificadas después del corte. Falta espesor y mapeo de cada pieza a la estructura.
 
+
+
+## Anexo A. Cotas del croquis de piñón-cremallera recibido el 22/11/2026
+
+| Elemento | Cota indicada | Interpretación/modelado |
+|---|---:|---|
+| Piñón, diámetro exterior | Ø30,0 mm | Cota del croquis |
+| Piñón, diámetro primitivo | Ø27,0 mm | Cota del croquis |
+| Espesor de cara | 10,0 mm | Cota del croquis |
+| Eje doble D | círculo Ø5,25 mm; 3,25 mm entre caras | Taladro doble plano; confirmar con el eje real |
+| Cremallera, paso | 4,71 mm | Cota del croquis; módulo aproximado 1,50 mm (4,71/π) |
+| Ángulo de presión | 20° | Cota del croquis |
+| Cremallera | 64 dientes, largo total 310 mm | CAD centra 64 dientes con 63 intervalos; confirmar si “64 veces” significa dientes o pasos |
+| Perfil | 10,6 mm y 3,375 mm | Interpretados provisionalmente como ancho/cara del cuerpo y profundidad total del diente; confirmar |
+| Pestaña MDF | espesor 4,0 mm; 2 agujeros Ø3,5 mm | La posición/separación no se acota; queda ajustable |
+
+La relación es consistente con un piñón estándar de **18 dientes**: 27/1,5=18. Se genera un perfil involuta de 20° como **supuesto paramétrico**, con dedendo estándar 1,25 módulos. La holgura y tolerancia de impresión no están definidas.
+
+**Desfase de longitud/paso:** 64 dientes tienen 63 intervalos entre centros: 63×4,71=296,73 mm. El CAD centra esa secuencia en una longitud total de 310 mm. Si el equipo quiso decir 64 pasos completos, deben cambiar el número de dientes o el largo. No cortar ni imprimir hasta confirmar esta convención y las cotas 10,6/3,375 mm.
+
+Ver [planos preliminares](planos/README.md) y [modelo paramétrico](parametrico/Pinon_Cremallera_EcoCompacta.scad). El archivo Fusion 360 Alpha original se conserva; el CAD nuevo no representa la integración validada de carcasa, motores o placa.
+
 ## 2. Principio de funcionamiento
 
 Se propone una **transmisión piñón–cremallera doble** para convertir el giro de **dos motores paso a paso 28BYJ-48** en desplazamiento vertical de una placa de MDF. Cada motor se ubicaría en una zona superior opuesta de la estructura y se acoplaría a un piñón impreso en 3D que engrane con una cremallera **vertical** unida a un borde opuesto de la placa.

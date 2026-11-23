@@ -26,7 +26,7 @@ Según el planteamiento del equipo, el papelero tendrá **base cuadrada nominal 
 | Matriz de rúbrica y pendientes | [Matriz](entrega_final/MATRIZ_RUBRICA.md) | Lista, falta evidencia física |
 | Software | [Firmware con persistencia](firmware/EcoCompacta/EcoCompacta.ino) · [Guía de uso](firmware/README.md) | Escrito, **sin compilación/validación real** |
 | Hardware | [Conexiones previstas](hardware/ESQUEMA_PRELIMINAR_FINAL.md) · [BOM editable](hardware/BOM_FINAL.csv) | Requiere cotejo con montaje y precios |
-| Diseño 3D | [Fusion 360 Alpha](diseno_3d/Basurero%20Compactador.f3d) | Revisar dimensiones, integrar todos los componentes y exportar planos/renders |
+| Diseño 3D | [Fusion 360 Alpha](diseno_3d/Basurero%20Compactador.f3d) · [Planos preliminares PDF/SVG](diseno-3d/planos/README.md) · [CAD piñón-cremallera](diseno-3d/parametrico/Pinon_Cremallera_EcoCompacta.scad) | Anteproyecto añadido; faltan validar cotas, integrar ensamble final y exportar renders |
 | Testing | [Protocolo](entrega_final/PROTOCOLO_PRUEBAS.md) · [Datos](entrega_final/datos_pruebas.csv) | Ensayos pendientes |
 | Fuentes / IA | [FUENTES.md](FUENTES.md) | Creado; verificar versiones y detalles con equipo |
 | Presentación | [Guion](entrega_final/PRESENTACION.md) · [Cronograma](entrega_final/CRONOGRAMA.md) | Ajustar al tiempo docente |

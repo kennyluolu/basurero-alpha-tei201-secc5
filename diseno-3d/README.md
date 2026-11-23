@@ -9,6 +9,10 @@ Se registraron **cinco piezas antes de cortarlas**; ver [medidas originales](../
 ## Concepto de diseño de la entrega final
 [Ver memoria mecánica del doble piñón-cremallera](MECANISMO_PINON_CREMALLERA.md). Se han comunicado **base nominal 25 × 25 cm**, **paredes de 25 × 33 cm**, **tapa 25 × 25 cm** y **placa compactadora MDF**, con **2 motores 28BYJ-48**, **2 drivers ULN2003**, **2 piñones impresos 3D** y **2 cremalleras verticales**. Control previsto: **NodeMCU ESP8266**. **Ninguno de esos elementos ni dimensiones se ha verificado todavía dentro del archivo .f3d.**
 
+## Anteproyecto CAD y planos añadidos
+
+Se agregaron [planos preliminares PDF/SVG](planos/README.md) y un [subconjunto paramétrico de piñón-cremallera en OpenSCAD](parametrico/Pinon_Cremallera_EcoCompacta.scad), basado en las cotas recibidas. **No reemplazan el .f3d Alpha ni representan el gemelo completo**: faltan las medidas de la madera cortada, la placa MDF, las tolerancias y ubicaciones reales de motores, sensor y electrónica.
+
 ## Acciones pendientes para el Avance #3
 - Medir las piezas de madera y comparar con el ensamble de Fusion 360.
 - Representar físicamente el contenedor, placa, guías, ESP8266 NodeMCU, HC-SR04, LEDs, fuente/cables y fijaciones desmontables.
