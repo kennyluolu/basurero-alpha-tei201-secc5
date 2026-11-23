@@ -2,7 +2,7 @@
 
 **Estado comunicado por el equipo:** todavía **NO dispone** de los componentes del accionamiento que describió: **2 motores 28BYJ-48, 2 módulos ULN2003, 2 piñones y 2 cremalleras**. No se han comprado ni instalado. El inventario usado en **Alpha** (ESP8266, HC-SR04, LEDs, protoboard y cables) corresponde a una etapa anterior; **reconfirmar que está físicamente disponible ahora**. La madera original sí fue utilizada para formar el papelero, según el equipo.
 
-**Plazo comunicado:** presentación prevista para viernes 27/11/2026; la guía Avance #3 indica 23/11/2026. Confirmar fecha docente.
+**Plazo comunicado:** entrega del repositorio GitHub el 23/11/2026 (confirmado por el equipo). Presentación oral prevista para el viernes 27/11/2026; confirmar hora con el docente.
 
 ## Prioridad y riesgo
 
