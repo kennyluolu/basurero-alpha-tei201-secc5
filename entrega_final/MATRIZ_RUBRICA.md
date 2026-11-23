@@ -2,7 +2,7 @@
 
 **Fuente:** guía oficial *Avance #3 — Prototipo IoT Completo*, DEC–UAI, documento suministrado por el equipo. **Actualización:** 22-11-2026.
 
-La pauta indica entrega/presentación el **23-11-2026**; el equipo comunicó viernes **27-11-2026**. Confirmar cuál corresponde a su sección.
+El equipo confirma la **entrega del repositorio GitHub para el 23-11-2026**. La presentación oral fue comunicada para el viernes **27-11-2026**; confirmar hora y fecha oral con el docente.
 
 **Estado:** este tablero distingue archivos creados de funciones **probadas en hardware**. Un archivo de código no demuestra funcionamiento. Objetivo interno: cubrir los criterios de nivel 7,0 sin inventar evidencias.
 
